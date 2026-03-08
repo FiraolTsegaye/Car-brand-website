@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lamborghini Rentals</title>
+
+<link rel="stylesheet" href="CSS/styles.css">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="assets/Images/logo2.png" alt="Lamborghini Logo">
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#models">Models</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+</nav>
+
+<a href="#models" class="nav-btn">Book Now</a>
+
+</header>
+
+<main>
+
+<section id="home" class="hero">
+
+<div class="hero-text">
+
+<h1>Explore, Experience, and Enjoy</h1>
+
+<p>
+Be it a business trip, family vacation, or spontaneous road trip,
+we provide the wheels that take you where you want to go.
+</p>
+
+<a href="#models" class="primary-btn">Book Now</a>
+
+</div>
+
+</section>
+
+<section id="models" class="models">
+
+<h2>The Cars You Always Wanted</h2>
+
+<div class="brand-icons">
+
+<img src="assets/Images/huracan_logo.webp">
+<img src="assets/Images/urus_logo.svg">
+<img src="assets/Images/revuelto_logo.png">
+<img src="assets/Images/temerario_logo.png">
+
+</div>
+
+<h3>Our Fleet</h3>
+
+<div class="car-grid">
+
+<div class="car-card">
+<h4>Aventador</h4>
+<img src="assets/Images/aventador.png">
+</div>
+
+<div class="car-card">
+<h4>Huracan</h4>
+<img src="assets/Images/huracan.png">
+</div>
+
+<div class="car-card">
+<h4>Urus</h4>
+<img src="assets/Images/urus.png">
+</div>
+
+<div class="car-card">
+<h4>Murcielago</h4>
+<img src="assets/Images/murci.png">
+</div>
+
+<div class="car-card">
+<h4>Revuelto</h4>
+<img src="assets/Images/revuelto.png">
+</div>
+
+<div class="car-card">
+<h4>Sian</h4>
+<img src="assets/Images/sian.png">
+</div>
+
+</div>
+
+<button class="shop-btn">Buy Now</button>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>What Makes Us Unique</h2>
+
+<div class="about-container">
+
+<img src="assets/Images/about_us.jpg">
+
+<div class="about-text">
+
+<h4>Design and Styling</h4>
+
+<p>
+We are renowned for our avant-garde design language with bold lines,
+low profiles, and futuristic styling.
+</p>
+
+<h4>Performance and Engineering</h4>
+
+<p>
+Our vehicles push engineering boundaries with powerful engines,
+advanced aerodynamics, and cutting-edge technology.
+</p>
+
+<h4>Exclusivity and Prestige</h4>
+
+<p>
+Owning a Lamborghini represents status, luxury,
+and passion for extraordinary automobiles.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonials">
+
+<h2>What Our Customers Say</h2>
+
+<div class="testimonial-track">
+
+<div class="testimonial">
+<p>"The Lambo is absolutely amazing. Driving it around the world is unreal."</p>
+<h4>Adrian Portelli</h4>
+</div>
+
+<div class="testimonial">
+<p>"One of the most exciting cars I've ever driven."</p>
+<h4>Anthony Aquilino</h4>
+</div>
+
+<div class="testimonial">
+<p>"The best car rental service I've ever used!"</p>
+<h4>Alex Smith</h4>
+</div>
+
+<div class="testimonial">
+<p>"Adventure in a Lamborghini feels completely different."</p>
+<h4>Connor</h4>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="newsletter">
+
+<div>
+<h3>Join Our Newsletter</h3>
+<p>Get exclusive offers and updates.</p>
+</div>
+
+<form class="newsletter-form">
+
+<div class="input-group">
+<i class='bx bx-user'></i>
+<input type="text" placeholder="Name">
+</div>
+
+<div class="input-group">
+<i class='bx bx-envelope'></i>
+<input type="email" placeholder="Email">
+</div>
+
+<button type="submit" class="submit-btn">Subscribe</button>
+
+</form>
+
+</div>
+
+<hr>
+
+<div class="footer-grid">
+
+<div>
+<h4>Navigation</h4>
+<a href="#home">Home</a>
+<a href="#models">Models</a>
+</div>
+
+<div>
+<h4>Company</h4>
+<a href="#">Careers</a>
+<a href="#">Press</a>
+<a href="#">News</a>
+</div>
+
+<div>
+<h4>Resources</h4>
+<a href="#">Partners</a>
+<a href="#">Community</a>
+<a href="#">Blog</a>
+</div>
+
+</div>
+
+<div class="socials">
+
+<a href="#"><i class='bx bxl-facebook'></i></a>
+<a href="#"><i class='bx bxl-twitter'></i></a>
+<a href="#"><i class='bx bxl-instagram'></i></a>
+<a href="#"><i class='bx bxl-youtube'></i></a>
+
+</div>
+
+<p class="copyright">© 2026 Lamborghini Rentals</p>
+
+</footer>
+
+<button class="back-to-top">
+<i class='bx bx-chevron-up'></i>
+</button>
+
+<script>
+
+const backToTop = document.querySelector(".back-to-top")
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 600){
+backToTop.classList.add("show")
+}
+else{
+backToTop.classList.remove("show")
+}
+
+})
+
+backToTop.onclick = () => {
+window.scrollTo({top:0,behavior:"smooth"})
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins, sans-serif;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+position:absolute;
+width:100%;
+color:white;
+}
+
+.logo img{
+  height: 45px;
+  width: auto;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+position:relative;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+bottom:-3px;
+left:0;
+width:100%;
+height:2px;
+background:#137adb;
+transform:scaleX(0);
+transition:.3s;
+}
+
+nav a:hover::after{
+transform:scaleX(1);
+}
+
+.nav-btn,
+.primary-btn,
+.shop-btn{
+transition:all .3s ease;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("../assets/Images/bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.primary-btn,
+.nav-btn {
+margin-top:20px;
+display:inline-block;
+padding:12px 30px;
+background:black;
+color:white;
+border-radius:30px;
+text-decoration:none;
+}
+
+.nav-btn,
+.submit-btn {
+  background: white;
+  color: black;
+}
+
+.primary-btn:hover{
+background:white;
+color:black;
+transform:scale(.95);
+}
+
+.models{
+padding:80px 40px;
+text-align:center;
+}
+
+.brand-icons{
+display:flex;
+justify-content:center;
+gap:40px;
+margin:30px 0;
+}
+
+.brand-icons img{
+width:100px;
+}
+
+.car-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.car-card img{
+width:100%;
+transition:.3s;
+}
+
+.car-card img:hover{
+transform:scale(1.05);
+}
+
+.shop-btn{
+margin-top:40px;
+padding:12px 30px;
+border-radius:30px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+}
+
+.shop-btn:hover{
+background:white;
+color:black;
+border:1px solid black;
+box-shadow:6px 5px #888;
+}
+
+.about{
+padding:80px 40px;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+url("../assets/Images/carousel_3.png");
+color:white;
+}
+
+.about-text{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:600px;
+line-height:1.6;
+}
+
+.about-text h4{
+font-size:20px;
+margin-top:10px;
+}
+
+.about-text p{
+font-size:14px;
+color:#ddd;
+}
+
+.about-container{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.about-container img{
+width:400px;
+border-radius:20px;
+filter:grayscale(60%);
+}
+
+.testimonials{
+background:#f4f4f4;
+padding:80px 40px;
+text-align:center;
+overflow:hidden;
+}
+
+.testimonial-track{
+  padding: 20px 0;
+display:flex;
+gap:30px;
+animation:scroll 25s linear infinite;
+}
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:10px;
+min-width:250px;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+.newsletter{
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.newsletter-form{
+display:flex;
+padding: 25px 0;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.newsletter-form input{
+background:transparent;
+border:none;
+border-bottom:1px solid #aaa;
+padding:10px 10px 10px 35px;
+color:white;
+outline:none;
+width:220px;
+}
+
+.input-group{
+position:relative;
+}
+
+.input-group i{
+position:absolute;
+left:8px;
+top:50%;
+transform:translateY(-50%);
+color:#aaa;
+}
+
+.newsletter-form input:focus{
+border-bottom:1px solid white;
+box-shadow:0 0 5px rgba(255,255,255,.4);
+}
+
+.submit-btn:hover{
+background:black;
+color:white;
+border: 1px solid white;
+}
+
+footer{
+background:black;
+color:white;
+padding:60px 40px;
+text-align:center;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:40px;
+margin:40px 0;
+}
+
+.footer-grid a{
+display:block;
+color:#aaa;
+margin:6px 0;
+text-decoration:none;
+}
+
+.socials{
+margin:20px 0;
+}
+
+.socials a{
+font-size:24px;
+margin:0 10px;
+color:white;
+}
+
+.back-to-top{
+position:fixed;
+bottom:20px;
+right:20px;
+width:45px;
+height:45px;
+border-radius:50%;
+border:none;
+background:black;
+color:white;
+display:none;
+cursor:pointer;
+}
+
+.back-to-top.show{
+display:block;
+}
+
+/* responsive part */
+@media(max-width:768px){
+
+.logo img{
+height:40px;
+}
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+}
