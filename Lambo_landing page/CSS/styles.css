@@ -159,11 +159,12 @@ box-shadow:6px 5px #888;
 padding:80px 40px;
 background:
 linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
-url("../assets/Images/carousel_3.png");
+url("../assets/Images/About_bg.jpg");
 color:white;
 }
 
 .about-text{
+padding: 0 30px;
 display:flex;
 flex-direction:column;
 gap:15px;
@@ -188,6 +189,7 @@ align-items:center;
 }
 
 .about-container img{
+  padding: 15px 0 0 0;
 width:400px;
 border-radius:20px;
 filter:grayscale(60%);
