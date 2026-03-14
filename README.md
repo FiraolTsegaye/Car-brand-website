@@ -1,1 +1,1 @@
-A landing oage for a Lamborghini dealership
+A landing page for a Lamborghini dealership
